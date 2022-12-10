@@ -133,5 +133,5 @@ function Approve_Form() {
     var usersUsername = document.getElementById('username').value;
 
     var age = document.getElementById('ages').value;
-    alert('Welcome '  + usersUsername  + ', ' + ' to '   + 'Lawrence form'  + 'You  are' + age  +  'years old');
+    alert('Welcome '  + usersUsername  + ', ' + ' to '   + 'Lawrence form '  + 'You  are ' + age  +  ' years old');
 }
