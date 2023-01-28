@@ -129,9 +129,37 @@
 
 
 
-function Approve_Form() {
-    var usersUsername = document.getElementById('username').value;
 
-    var age = document.getElementById('ages').value;
-    alert('Welcome '  + usersUsername  + ', ' + ' to '   + 'Lawrence form '  + 'You  are ' + age  +  ' years old');
-}
+// function Approve_Form() {
+//     var usersUsername = document.getElementById('').value;
+
+//     var age = document.getElementById('').value;
+//     alert('Welcome '  + usersUsername  + ', ' + ' to '   + 'Lawrence form '  + 'You  are ' + age  +  ' years old');
+
+
+const nameBe = document.getElementById('username');
+const age = document.getElementById('password');
+const Email = document.getElementById('Email');
+
+
+
+
+form.addEventListener('submit', (e) =>{
+    let messages = [];
+    if (username.value === "" || username.value == null){
+        messages.push('Name is required')
+    }
+
+    if(password.value.length <= 10){
+        messages.push('WTF..Password is required men.')
+    }else{
+        alert('Success')
+    }
+
+    if(messages.length > 0){
+        e.preventDefault()
+        errorElement.innerText = messages.join(',')
+    }
+
+
+});
